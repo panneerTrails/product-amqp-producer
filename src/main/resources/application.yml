@@ -1,0 +1,19 @@
+info:
+  description: "Service for AMQP producer"
+
+spring:
+  application:
+    name: product-amqp-producer
+
+security:
+  basic:
+    enabled: false
+
+server:
+  port: 9095
+
+product:
+  routingkey:
+    name: testRoutingKey
+  exchange:
+    name: testExchangeName
